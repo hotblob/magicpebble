@@ -14,7 +14,21 @@
     </style>
   </head>
   <body>
-    <a href="https://www.youtube.com/watch?v=iRscbQQVRTY&ab_channel=exham14">
+    <script>
+    var sites = [
+        'http://www.google.com',
+        'http://www.stackoverflow.com',
+        'http://www.example.com',
+        'http://www.youtube.com'
+    ];
+
+    function randomSite() {
+        var i = parseInt(Math.random() * sites.length);
+        location.href = sites[i];
+    }
+  </script>
+<a href="#" onclick="randomSite();">Random</a>
+<!-- <a href="https://www.youtube.com/watch?v=iRscbQQVRTY&ab_channel=exham14"> -->
       <img src="https://5.imimg.com/data5/GS/PO/MY-37974066/natural-pebble-stone-500x500.jpg">
     </a>
     <h1>The Magic Pebbles</h1>
